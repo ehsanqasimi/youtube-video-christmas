@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/youtube-video-christmas/static/css/main.81c3d87b.css",
+    "main.js": "/youtube-video-christmas/static/js/main.dafe31d7.js",
+    "static/media/santaImageDesktop.svg": "/youtube-video-christmas/static/media/santaImageDesktop.17e3dfbb5418a3f7b047.svg",
+    "static/media/santaImage.svg": "/youtube-video-christmas/static/media/santaImage.85cdafa73b9925d5c402.svg",
+    "static/media/chismasTreeDesktop.svg": "/youtube-video-christmas/static/media/chismasTreeDesktop.9241a00ba55a612dcbdb.svg",
+    "static/media/chrismasTree.svg": "/youtube-video-christmas/static/media/chrismasTree.412dc01eb629a0851234.svg",
+    "static/media/GiftImage.svg": "/youtube-video-christmas/static/media/GiftImage.dc6a2977c754258d8faff8c8c35257a4.svg",
+    "index.html": "/youtube-video-christmas/index.html",
+    "main.81c3d87b.css.map": "/youtube-video-christmas/static/css/main.81c3d87b.css.map",
+    "main.dafe31d7.js.map": "/youtube-video-christmas/static/js/main.dafe31d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81c3d87b.css",
+    "static/js/main.dafe31d7.js"
+  ]
+}
