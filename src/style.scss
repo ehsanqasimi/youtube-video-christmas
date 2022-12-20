@@ -1,0 +1,178 @@
+$darkPink: #e74242;
+$lightPink: #f2396a;
+$yellow: #ffd543;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'cooper';
+}
+
+.container{
+    width: 100%;
+    height: max-content;
+    header{
+        .nav{
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-inline: 50px;
+            height: 100px;
+            width: 100%;
+            .logo{
+                a{
+                    text-decoration: none;
+                    font-family: 'curlz MT';
+                    font-size: 30px;
+                    //color: white;
+                }
+            }
+            ul{
+                display: flex;
+                gap: 50px;
+                width: max-content;
+                height: max-content;
+                a{
+                    text-decoration: none;
+                }
+            }
+            ul.home{
+                a:nth-child(1){
+                    color: $yellow;
+                    border-bottom: 2px solid $yellow;
+                }
+            }
+            ul.gift{
+                a:nth-child(2){
+                    color: $yellow;
+                    border-bottom: 2px solid $yellow;
+                }
+            }
+        }
+    }
+    section.home{
+        font-family: 'forte';
+        width: 100%;
+        height: 100vh;
+        background-image: 
+            url(./sections/images/santaImage.svg),
+            url(./sections/images/chrismasTree.svg),
+            linear-gradient(to top right , $darkPink,$lightPink)
+        ;
+        background-repeat: no-repeat;
+        background-position: 10% 5%, 70% 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .home-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-direction: column;
+            padding-inline: 50px;
+            .home-content-text{
+                font-size: 24px;
+                color: white;
+                text-align: center;
+            }
+            .home-content-button{
+                border-radius: 5px;
+                padding: 10px 20px;
+                background-color: $yellow;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                font-family: 'cooper';
+                a{
+                    text-decoration: none;
+                    color: #5ac412;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    section.gift{
+        height: 100vh;
+        font-family: 'forte';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 50px;
+        background: linear-gradient(to top right,$darkPink,$lightPink);
+        .gift-container{
+            padding-top: 100px;
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 100vh;
+            grid-template-columns: repeat(2 ,1fr);
+            img{
+                width: 130px;
+                cursor: pointer;
+                opacity: 1;
+                scale: 1;
+                transition: all 500ms ease-in-out;
+            }
+            img.fade-out{
+                opacity: 0;
+                scale: 0;
+            }
+        }
+        .selected{
+            img{
+                opacity: 1;
+                scale: 1;
+                cursor: pointer;
+                transition: all 500ms ease-in-out;
+            }
+            img.fade-out{
+                opacity: 0;
+                scale: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:800px) {
+    .container{
+        text-align: center;
+        header{
+            .nav{
+                padding-inline: 10%;
+            }
+        }
+        section.home{
+            background-image: 
+                url(./sections/images/chismasTreeDesktop.svg),
+                url(./sections/images/santaImageDesktop.svg),                
+                linear-gradient(to top right, $darkPink,$lightPink)
+            ;
+            background-size: 25% ,25% ,100%;
+            background-position: 20% 90% , 80% 90%;
+            .home-content{
+                .home-content-text{
+                    font-size: 50px;
+                    padding-inline: 300px;
+                }
+            }
+        }
+        section.gift{
+            .gift-container{
+                grid-template-columns: repeat(4,1fr);
+            }
+            .selected{
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
